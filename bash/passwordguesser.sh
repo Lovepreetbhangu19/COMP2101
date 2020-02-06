@@ -28,9 +28,29 @@ if [ $myString = $referenceString ]; then
     if [ $myString = $referenceString ]; then
       echo "Login Successful."
       echo
-  else
-    echo
-    echo "Try Diffrent String."
+    else
+      echo
+      echo "Try Diffrent String."
+      read -s -p "Guess the password:" myString
+    if [ $myString = $referenceString ]; then
+      echo "Login Successful."
+      echo
+      else
+        echo
+        echo "Try Diffrent String."
+        read -s -p "Guess the password:" myString
+        if [ $myString = $referenceString ]; then
+          echo "Login Successful."
+          echo
+          else
+            echo
+            echo "Try Diffrent String."
+            read -s -p "Guess the password:" myString
+              echo
+            else
+    echo "Script exiting."
+fi
+fi
 fi
 fi
 fi
